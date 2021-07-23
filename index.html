@@ -5,6 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script type="text/javascript">
+      (function (g, r, s, f) {
+        g.grsfSettings = { campaignId: "xc1r15", version: "2.0.0" };
+        s = r.getElementsByTagName("head")[0];
+        f = r.createElement("script");
+        f.async = 1;
+        f.src =
+          "https://app.growsurf.com/growsurf.js" +
+          "?v=" +
+          g.grsfSettings.version;
+        f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);
+        !g.grsfInit ? s.appendChild(f) : "";
+      })(window, document);
+    </script>
   </head>
   <body>
     <div style="text-align: center">
@@ -54,6 +68,7 @@
       }
     </script>
     <script src="//embed.typeform.com/next/embed.js"></script>
+
     <!-- <script>
       function submit(event) {
         // this needs to be available on global scope (window)
