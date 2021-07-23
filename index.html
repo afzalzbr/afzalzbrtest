@@ -77,20 +77,15 @@
         alert("Form is ready!");
       }
     </script> -->
-    <div data-tf-popup="SdGzhcXj" data-tf-on-submit="submit"></div>
-    <button id="button">open form</button>
-    <script src="//embed.typeform.com/next/embed.js"></script>
-    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css" />
-    <script>
-      const { open, close, toggle, refresh } =
-        window.tf.createPopup("SdGzhcXj");
-      document.querySelector("#button").click = toggle;
-    </script>
     <script>
       function submit(event) {
         // this needs to be available on global scope (window)
         console.log("ON SUBMIT : ", event.response_id);
       }
     </script>
+    <button data-tf-popup="SdGzhcXj" data-tf-on-submit="submit">
+      open form
+    </button>
+    <script src="//embed.typeform.com/next/embed.js"></script>
   </body>
 </html>
