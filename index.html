@@ -42,47 +42,24 @@
       </button>
     </div>
     <script>
-      (function () {
-        var qs,
-          js,
-          q,
-          s,
-          d = document,
-          gi = d.getElementById,
-          ce = d.createElement,
-          gt = d.getElementsByTagName,
-          id = "typef_orm_share",
-          b = "https://embed.typeform.com/";
-        if (!gi.call(d, id)) {
-          js = ce.call(d, "script");
-          js.id = id;
-          js.src = b + "embed.js";
-          q = gt.call(d, "script")[0];
-          q.parentNode.insertBefore(js, q);
-        }
-      })();
-    </script>
-    <div data-tf-popup="SdGzhcXj" data-tf-on-submit="submitType"></div>
-    <script>
       function submit(event) {
         // this needs to be available on global scope (window)
         console.log("Typeform Submit: ", event.response_id);
       }
     </script>
-    <div data-tf-widget="typef_orm_share" data-tf-on-ready="ready"></div>
     <script>
       function ready() {
         // this needs to be available on global scope (window)
         alert("Form is ready!");
       }
     </script>
+    <script src="//embed.typeform.com/next/embed.js"></script>
     <!-- <script>
       function submit(event) {
         // this needs to be available on global scope (window)
         console.log("ON SUBMIT : ", event.response_id);
       }
     </script>
-    <script src="//embed.typeform.com/next/embed.js"></script>
     -->
   </body>
 </html>
