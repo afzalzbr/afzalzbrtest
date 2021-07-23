@@ -12,6 +12,7 @@
         class="typeform-share button"
         data-tf-popup="SdGzhcXj"
         data-tf-on-submit="submit"
+        data-tf-on-ready="ready"
         style="
           display: inline-block;
           text-decoration: none;
@@ -33,13 +34,14 @@
           font-weight: bold;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
+          border: 0;
         "
         data-size="100"
       >
         Launch me
       </button>
     </div>
-    <!--   <script>
+    <script>
       (function () {
         var qs,
           js,
@@ -62,9 +64,8 @@
     </script>
     <div data-tf-popup="SdGzhcXj" data-tf-on-submit="submitType"></div>
     <script>
-      function submitType(event) {
+      function submit(event) {
         // this needs to be available on global scope (window)
-        alert("Form is submitted!");
         console.log("Typeform Submit: ", event.response_id);
       }
     </script>
@@ -74,16 +75,14 @@
         // this needs to be available on global scope (window)
         alert("Form is ready!");
       }
-    </script> -->
-    <script>
+    </script>
+    <!-- <script>
       function submit(event) {
         // this needs to be available on global scope (window)
         console.log("ON SUBMIT : ", event.response_id);
       }
     </script>
-    <!-- <button data-tf-popup="SdGzhcXj" data-tf-on-submit="submit">
-      open form
-    </button> -->
     <script src="//embed.typeform.com/next/embed.js"></script>
+    -->
   </body>
 </html>
