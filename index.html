@@ -54,11 +54,11 @@
         Launch me
       </button>
     </div>
-    <button onclick="submit()">Click me</button>
+    <button onclick="submit(e)">Click me</button>
     <script>
       function submit(event) {
         // this needs to be available on global scope (window)
-        console.log("Typeform Submit: ", event.response_id);
+        console.log("Typeform Submit: ");
         growsurf.addParticipant("afzalzbr@gmail.com", function () {
           console.log("callback addParticipant");
         });
