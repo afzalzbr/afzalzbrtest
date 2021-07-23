@@ -26,7 +26,6 @@
         class="typeform-share button"
         data-tf-popup="SdGzhcXj"
         data-tf-on-submit="submit"
-        data-tf-on-ready="ready"
         style="
           display: inline-block;
           text-decoration: none;
@@ -59,12 +58,13 @@
       function submit(event) {
         // this needs to be available on global scope (window)
         console.log("Typeform Submit: ", event.response_id);
+        growsurf.addParticipant(data, callback);
       }
     </script>
     <script>
       function ready() {
         // this needs to be available on global scope (window)
-        alert("Form is ready!");
+        // alert("Form is ready!");
       }
     </script>
     <script src="//embed.typeform.com/next/embed.js"></script>
