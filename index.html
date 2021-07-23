@@ -7,7 +7,7 @@
     <title>Document</title>
   </head>
   <body>
-    <div style="text-align: center">
+    <!-- <div style="text-align: center">
       <a
         class="typeform-share button"
         href="https://form.typeform.com/to/SdGzhcXj?typeform-medium=embed-snippet"
@@ -62,7 +62,7 @@
         }
       })();
     </script>
-    <div data-tf-popup="typef_orm_share" data-tf-on-submit="submitType"></div>
+    <div data-tf-popup="SdGzhcXj" data-tf-on-submit="submitType"></div>
     <script>
       function submitType(event) {
         // this needs to be available on global scope (window)
@@ -76,6 +76,15 @@
         // this needs to be available on global scope (window)
         alert("Form is ready!");
       }
+    </script> -->
+
+    <button id="button">open form</button>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+    <link rel="stylesheet" href="//embed.typeform.com/next/css/popup.css" />
+    <script>
+      const { open, close, toggle, refresh } =
+        window.tf.createPopup("SdGzhcXj");
+      document.querySelector("#button").click = toggle;
     </script>
   </body>
 </html>
